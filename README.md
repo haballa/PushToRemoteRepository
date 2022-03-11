@@ -1,5 +1,8 @@
 # CopyFlowToRepository
 
+Für die Git-Funktionalität muss posh-git zu der Powershell hinzugefügt werden.
+Siehe https://www.pugetsystems.com/labs/hpc/Note-Setup-Git-for-PowerShell-on-Windows-10-1653/
+
 noch zu tun:
 - erste Zeile und letzte Zeile (FUNCTION) entfernen ✔
 - gelöschte Subflows: Textfile auch löschen ✔
