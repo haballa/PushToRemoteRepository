@@ -1,5 +1,7 @@
 # CopyFlowToRepository
 
+Automatisches Aktualisieren eines Repository aus Power Automate Desktop.
+
 Für die Git-Funktionalität muss posh-git zu der Powershell hinzugefügt werden.
 Siehe https://www.pugetsystems.com/labs/hpc/Note-Setup-Git-for-PowerShell-on-Windows-10-1653/
 
