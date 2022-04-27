@@ -1,4 +1,4 @@
-# PushToRemoteRepository
+# Power Automate Desktop - PushToRemoteRepository
 
 **Creation of back-up of a Power Automate Desktop flow (PAD) and pushing it to a remote repository (Git)**
 
@@ -13,7 +13,11 @@
 -----------------------------------
 
 ## How to Use This Flow
-**First run (initialization)**
+**Setting-Up the Flow**
+
+Create a flow named "PushToRemoteRepository" in your Power Automate Desktop. In this flow, create subflows named after text file names in "\source_code" but omit the "Subflow". Copy the text file to the respective subflow. For example: the content of "Subflow D0_CreateNewVersionNumber.txt" must be copied into the subflow named "D0_CreateNewVersionNumber". Save the flow and you are good to go.
+
+**First run (Initialization)**
 
 If you start it for the very first time, a JSON file is copied to a folder named ".PowerAutomateDesktopRobotsConfig" in the folder specified in the above mentioned environment variable. After that, it is opened and you are prompted to change it to your needs. The flow will stop after the file is opened.
 
