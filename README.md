@@ -13,17 +13,17 @@
 -----------------------------------
 
 ## How to Use This Flow
-**Setting-Up the Flow**
+### Setting-Up the Flow
 
 Create a flow named "PushToRemoteRepository" in your Power Automate Desktop. In this flow, create subflows named after text file names in "\source_code" but omit the "Subflow". Copy the text file to the respective subflow. For example: the content of "Subflow D0_CreateNewVersionNumber.txt" must be copied into the subflow named "D0_CreateNewVersionNumber". Save the flow and you are good to go.
 
-**First run (Initialization)**
+### First run (Initialization)
 
 If you start it for the very first time, a JSON file is copied to a folder named ".PowerAutomateDesktopRobotsConfig" in the folder specified in the above mentioned environment variable. After that, it is opened and you are prompted to change it to your needs. The flow will stop after the file is opened.
 
 Change the entry "DefaultFolder" to the directory where all your flows are located. "WaitingTimeOpenEditor" only needs to be changed on very slow computers. The JSON must be saved manually. 
 
-**Runs After Initialization Run**
+### Runs After Initialization Run
 
 If the JSON file already exists, the following steps are performed.
 
