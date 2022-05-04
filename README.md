@@ -80,6 +80,6 @@ The time it takes from start to finish of the flow can vary from less than a min
 
 ## Limitations
 Due to way it works, there are some limitations to be considered. 
-- Changes in the Power Automate Desktop version might affect the working of the flow. It interacts with the UI of PAD and changes in it could affect the flow negatively.
+- Changes in the Power Automate Desktop version might affect the working of the flow. It interacts with the UI of PAD and changes in it could affect the flow negatively. Tested with Power Automate Desktop 2.19.
 - This flow could possibly cause harm to the flow to be backed-up as well as to the repository by deleting files. Use it with care and at your own risk.
 - This flow has only been tested with commits to the master/main branch. More sophisticated functions of Git are not supported.
