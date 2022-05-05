@@ -9,10 +9,8 @@
 - a folder must be created named *exactly* like the PAD flow to be backed-up
 - an environment variable with the name 'PADRobotsGeneralConfigPath' needs to be created; the value must be the folder where all the repositories of the PAD flows should stored
 - the folder for each flow should be a Git directory; this is not mandatory but the full functionality can only be leveraged this way
-- since Git commands are used in the Powershell, the Powershell plugin posh-git must be installed --> https://www.pugetsystems.com/labs/hpc/Note-Setup-Git-for-PowerShell-on-Windows-10-1653/
-- if the repository version should be automatically updated in flow code, a comment with the following pattern must in "Main" (just copy and paste the following code):
-
-        # VERSION OF FLOW -- v1.22.333 // 2000-01-22 21:43
+- since Git commands are used in the Powershell, the Powershell plugin posh-git must be installed --> <https://www.pugetsystems.com/labs/hpc/Note-Setup-Git-for-PowerShell-on-Windows-10-1653/>
+- if the repository version should be automatically updated in flow code, a comment with the following pattern must in "Main" (just copy and paste the following code): `# VERSION OF FLOW -- v1.22.333 // 2000-01-22 21:43`
 
 -----------------------------------
 
@@ -43,6 +41,8 @@ If the JSON file already exists, the following steps are performed.
 10. Flow is finished.
 
 The time it takes from start to finish of the flow can vary from about a minute (flow already opened in editor, no I/Os) to more than 3 minutes (flow not yet opened in editor, many I/Os).
+
+During the execution of the flow, please take the hands off your mouse and keyboard (and touchscreen), so it does not interfere with UI interaction of the flow.
 
 -----------------------------------
 
