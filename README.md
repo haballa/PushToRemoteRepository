@@ -10,7 +10,7 @@
 - an environment variable with the name 'PADRobotsGeneralConfigPath' needs to be created; the value must be the folder where all the repositories of the PAD flows should stored
 - the folder for each flow should be a Git directory; this is not mandatory but the full functionality can only be leveraged this way
 - since Git commands are used in the Powershell, the Powershell plugin posh-git must be installed --> <https://www.pugetsystems.com/labs/hpc/Note-Setup-Git-for-PowerShell-on-Windows-10-1653/>
-- if the repository version should be automatically updated in flow code, a comment with the following pattern must in "Main" (just copy and paste the following code): `# VERSION OF FLOW -- v1.22.333 // 2000-01-22 21:43`
+- if the repository version should be automatically updated in flow code, a comment with the following pattern must be in "Main" (just copy and paste the following code): `# VERSION OF FLOW -- v1.22.333 // 2000-01-22 21:43`
 
 -----------------------------------
 
