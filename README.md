@@ -10,7 +10,7 @@
 - an environment variable with the name 'PADRobotsGeneralConfigPath' needs to be created; the value must be the folder where all the repositories of the PAD flows should stored
 - the folder for each flow should be a Git directory; this is not mandatory but the full functionality can only be leveraged this way
 - since Git commands are used in the Powershell, the Powershell plugin posh-git must be installed --> <https://www.pugetsystems.com/labs/hpc/Note-Setup-Git-for-PowerShell-on-Windows-10-1653/>
-- if the repository version should be automatically updated in flow code, a comment with the following pattern must be in "Main" (just copy and paste the following code): `# VERSION OF FLOW -- v1.22.333 // 2000-01-22 21:43`
+- if the repository version should be automatically updated in flow code, a comment with the following pattern must be in "Main" (just copy and paste the following code into the PAD editor): `# VERSION OF FLOW -- v1.22.333 // 2000-01-22 21:43`
 
 -----------------------------------
 
@@ -67,6 +67,7 @@ During the execution of the flow, please take the hands off your mouse and keybo
 
 - Checking if there are any inputs/outputs
 - If so, going through every I/O and copying data to JSON file
+- The default value cannot be copied for Booleans and for datatables, custom objects and lists it does not make sense
 
 ### B0_DeleteNonexistingTextfiles
 
@@ -99,7 +100,7 @@ During the execution of the flow, please take the hands off your mouse and keybo
 ## Limitations
 
 Due to the way it works, there are some limitations to be considered. 
-- Changes in the Power Automate Desktop version might affect the working of the flow. It interacts with the UI of PAD and changes in it could affect the flow negatively. Tested with Power Automate Desktop 2.19.
+- Changes in the Power Automate Desktop version might affect the working of the flow. It interacts with the UI of PAD and changes in it could affect the flow negatively. Tested with Power Automate Desktop 2.23.
 - This flow could possibly cause harm to the flow to be backed-up as well as to the repository by deleting files. Use it with care and at your own risk.
 - If the language of Power Automate Desktop is not English or German, the export of the inputs and outputs might cause some problems and might not work at all.
 - This flow has only been tested with commits to the master/main branch. More sophisticated functions of Git have not been tested and are therefore not supported.
