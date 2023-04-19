@@ -31,7 +31,7 @@ If the JSON file already exists, the following steps are performed.
 
 1. Select the flow to be backed-up. After that, no user intervention is needed until another message box pops up.
 2. If the PAD editor is not open, the robot opens the selected flow in the PAD console.
-3. Once the flow is opened in the editor, the robot checks if there are any inputs and outputs defined in the flow. If so, those are written to the file "Inputs_Outputs.json". Depending on the number of inputs and outputs, this may take some time.
+3. (This functionality has been discontinued and will be deleted from the source code in the future) Once the flow is opened in the editor, the robot checks if there are any inputs and outputs defined in the flow. If so, those are written to the file "Inputs_Outputs.json". Depending on the number of inputs and outputs, this may take some time. 
 4. The robot copies the source code of each subflow and creates a text file for each subflow. These are stored in the subfolder "source_code". 
 5. A form is opened providing some information. In addition, the change significance can be selected (see also https://en.wikipedia.org/wiki/Software_versioning#Semantic_versioning), which influence the versioning. The "description of changes" field determines the Git commit message and is also added to the version. In case, the local repository should be pushed to a remote repository (like Github or Gitlab), "Okay" must be pressed. "Cancel" ends the flow.
 6. The "VersionHistory.txt" file is updated. 
@@ -40,7 +40,7 @@ If the JSON file already exists, the following steps are performed.
 9. A message box shows the Git message.
 10. Flow is finished.
 
-The time it takes from start to finish of the flow can vary from about a minute (flow already opened in editor, no I/Os) to more than 3 minutes (flow not yet opened in editor, many I/Os).
+The time it takes from start to finish of the flow can vary from about a minute (flow already opened in editor) to more than 3 minutes (flow not yet opened in editor).
 
 During the execution of the flow, please take the hands off your mouse and keyboard (and touchscreen), so it does not interfere with UI interaction of the flow.
 
@@ -63,7 +63,7 @@ During the execution of the flow, please take the hands off your mouse and keybo
 - Git commands via Powershell
 - Display of Git message
 
-### A0_InputsOutputs
+### A0_InputsOutputs (to be deleted soon)
 
 - Checking if there are any inputs/outputs
 - If so, going through every I/O and copying data to JSON file
@@ -100,7 +100,7 @@ During the execution of the flow, please take the hands off your mouse and keybo
 ## Limitations
 
 Due to the way it works, there are some limitations to be considered. 
-- Changes in the Power Automate Desktop version might affect the working of the flow. It interacts with the UI of PAD and changes in it could affect the flow negatively. Tested with Power Automate Desktop 2.23.
+- Changes in the Power Automate Desktop version might affect the working of the flow. It interacts with the UI of PAD and changes in it could affect the flow negatively. Tested with Power Automate Desktop 2.31.
 - This flow could possibly cause harm to the flow to be backed-up as well as to the repository by deleting files. Use it with care and at your own risk.
-- If the language of Power Automate Desktop is not English or German, the export of the inputs and outputs might cause some problems and might not work at all.
+- If there are inputs or outputs to your flow, those will not be saved anymore! 
 - This flow has only been tested with commits to the master/main branch. More sophisticated functions of Git have not been tested and are therefore not supported.
